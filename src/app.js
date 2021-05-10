@@ -25,6 +25,5 @@ const jsx= (
 )
 
 
-console.log(visibleExpenses);
 
 ReactDOM.render(jsx,document.getElementById('app'))
