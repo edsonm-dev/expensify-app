@@ -4,7 +4,7 @@ const expenses = [{
     id:'1',
     description:'Gum',
     note:'',
-    amount: 195,
+    amount: 500,
     createdAt:0
 
 },
@@ -12,7 +12,7 @@ const expenses = [{
     id:'2',
     description:'Rent',
     note:'',
-    amount: 103295,
+    amount: 400,
     createdAt:moment(0).subtract(4,'days').valueOf()
 
 },
@@ -20,7 +20,7 @@ const expenses = [{
     id:'3',
     description:'credit Card',
     note:'',
-    amount: 4500,
+    amount: 100,
     createdAt:moment(0).add(4,'days').valueOf()
 
 }]

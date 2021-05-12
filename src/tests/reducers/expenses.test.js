@@ -64,7 +64,7 @@ test('should edit expense by id',()=>{
     expect(state[1]).toEqual({id:'2',
     description:'Rent',
     note:'test22',
-    amount: 103295,
+    amount: 400,
     createdAt:moment(0).subtract(4,'days').valueOf()} )
 
 
