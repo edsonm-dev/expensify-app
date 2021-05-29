@@ -1,0 +1,25 @@
+.button {
+    border:none;
+    border-radius: 3px;
+    background:$light-blue;
+    color:white;
+    font-size:$font-size-large;
+    font-weight: 300;
+    padding:$s-size $l-size;
+    display:inline-block;
+    text-decoration:none;
+    line-height:1;
+
+/* 
+    &:hover{
+        background:lighten($light-blue,5%);
+    } */
+
+}
+.button--logout{
+    background:none;
+}
+.button--secondary{
+    background:#888888;
+    
+}

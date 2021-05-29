@@ -19,7 +19,7 @@ module.exports={
     
 
     
-        entry:'./src/app.js',
+        entry:['babel-polyfill','./src/app.js'],
         output:{
             path:path.join(__dirname ,'\public','dist'),
             filename:'bundle.js'
@@ -37,7 +37,8 @@ module.exports={
                 use:[MiniCssExtractPlugin.loader,{
                     loader:'css-loader',
                     options:{
-                        sourceMap:true
+                        sourceMap:true,
+                        url:false
                     }
                 },{
                     loader:'sass-loader',
@@ -45,7 +46,13 @@ module.exports={
                         sourceMap:true
                     }
                 }]
-        }]
+        },
+        {
+            
+                test: /\.(ttf|eot|svg|png|jpg|gif|ico)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: 'file-loader'
+              
+          }]
         },
         plugins:[
             new MiniCssExtractPlugin(),
